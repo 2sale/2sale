@@ -64,8 +64,10 @@ header {
       transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1); }
       header nav a:hover {
         color: #33EEAC; }
-  header .btn:hover {
-    background-color: white; }
+  header .btn {
+    color: #3A4388; }
+    header .btn:hover {
+      background-color: white; }
 
 footer {
   padding: 55px 0;
@@ -167,11 +169,9 @@ form {
     margin: 32px 0 58px; }
   .sec-hero .hero-animate {
     background-color: #3A4388;
-    color: #33EEAC;
-    padding: 10px 15px;
     width: 750px;
     border-radius: 35px;
-    font-size: 40px; }
+    overflow: hidden; }
 
 .sec-business {
   padding: 200px 0; }
