@@ -21,9 +21,18 @@
 		margin: 32px 0 58px
 	.hero-animate
 		background-color: $color-primary
-		width: 750px
+		max-width: 750px
 		border-radius: 35px
 		overflow: hidden
+	@media only screen and (max-width: 40rem)
+		.hero-wrap
+			height: initial
+			padding: 100px 0
+		.headline
+			font-size: 50px
+			line-height: 50px
+		.subhead
+			font-size: 32px
 
 .sec-business
 	padding: 200px 0
@@ -64,11 +73,15 @@
 					visibility: visible
 				span
 					display: none
+		@media only screen and (max-width: 40rem)
+			margin-bottom: 100px
+			.model-item
+				width: 100%
+				img
+					max-width: 170px
+					max-height: 146px
 	.models-cont-wrap
 		.model-cont
-			display: flex
-			flex-direction: column
-			gap: 86px
 			display: none
 			.model-title
 				font-family: 'orkney-bold', sans-serif
@@ -122,6 +135,7 @@
 				.topics li:before
 					background-image: url('../images/icon-x.svg')
 			.solution
+				margin-top: 86px
 				.topics-wrap
 					display: flex
 					gap: 200px
@@ -132,6 +146,19 @@
 					width: 497px
 					height: 82px
 					font-size: 30px
+			@media only screen and (max-width: 40rem)
+				.problem
+					flex-direction: column
+					.topics-wrap:before
+						content: none
+				.solution
+					.topics-wrap
+						flex-direction: column
+						gap: 40px
+					.btn
+						width: initial
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
 
 .sec-partners
 	padding: 48px 0 116px
@@ -148,6 +175,10 @@
 		gap: 80px
 		align-items: center
 		justify-content: center
+		@media only screen and (max-width: 40rem)
+			gap: 40px
+			img
+				width: 30%
 
 .sec-contact
 	padding: 200px 0
@@ -157,3 +188,7 @@
 		line-height: 45px
 		color: $color-primary
 		width: 468px
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
+		.sec-content
+			width: 100%

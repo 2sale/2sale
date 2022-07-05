@@ -13,5 +13,24 @@ $(document).ready(function(){
 
 		});
 
+		var owlMobile = function() {
+			if ($(window).width() < 640) {
+		    $('.models-wrap').owlCarousel({
+		  		items:1,
+		  		loop:false,
+		  		nav:false,
+		  		dot:false,
+		  		stagePadding:20,
+		  		margin:20
+		    });
+			}
+		};
+
+		$(window).resize(function() {
+		  owlMobile();
+		});
+
+		owlMobile();
+
 	})(jQuery);
 });
