@@ -200,10 +200,11 @@ form {
       height: initial;
       padding: 100px 0; }
     .sec-hero .headline {
-      font-size: 50px;
-      line-height: 50px; }
+      font-size: 40px;
+      line-height: 40px; }
     .sec-hero .subhead {
-      font-size: 32px; } }
+      font-size: 30px;
+      margin: 20px 0; } }
 
 .sec-business {
   padding: 200px 0; }
@@ -322,18 +323,28 @@ form {
         height: 82px;
         font-size: 30px; }
     @media only screen and (max-width: 40rem) {
+      .sec-business .models-cont-wrap .model-cont .model-title {
+        font-size: 40px;
+        line-height: initial;
+        margin-bottom: 40px; }
+      .sec-business .models-cont-wrap .model-cont .model-subtitle {
+        font-size: 30px; }
+      .sec-business .models-cont-wrap .model-cont .topics {
+        gap: 20px; }
       .sec-business .models-cont-wrap .model-cont .problem {
         flex-direction: column; }
         .sec-business .models-cont-wrap .model-cont .problem .topics-wrap:before {
           content: none; }
       .sec-business .models-cont-wrap .model-cont .solution .topics-wrap {
         flex-direction: column;
-        gap: 40px; }
+        gap: 20px; }
       .sec-business .models-cont-wrap .model-cont .solution .btn {
         width: initial; } }
   @media only screen and (max-width: 40rem) {
     .sec-business {
-      padding: 100px 0; } }
+      padding: 100px 0; }
+      .sec-business .sec-title {
+        font-size: 40px; } }
 
 .sec-partners {
   padding: 48px 0 116px;
@@ -350,11 +361,13 @@ form {
     gap: 80px;
     align-items: center;
     justify-content: center; }
-    @media only screen and (max-width: 40rem) {
-      .sec-partners .partners-wrap {
-        gap: 40px; }
-        .sec-partners .partners-wrap img {
-          width: 30%; } }
+  @media only screen and (max-width: 40rem) {
+    .sec-partners .sec-title {
+      font-size: 40px; }
+    .sec-partners .partners-wrap {
+      gap: 40px; }
+      .sec-partners .partners-wrap img {
+        width: 30%; } }
 
 .sec-contact {
   padding: 200px 0; }
@@ -368,4 +381,6 @@ form {
     .sec-contact {
       padding: 100px 0; }
       .sec-contact .sec-content {
-        width: 100%; } }
+        width: 100%;
+        font-size: 20px;
+        line-height: initial; } }
