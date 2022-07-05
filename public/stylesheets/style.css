@@ -1,4 +1,206 @@
+a, a:active, a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'gilroy-light';
+  src: url("../fonts/gilroy-light-webfont.woff2") format("woff2"), url("../fonts/gilroy-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gilroy-extrabold';
+  src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"), url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'orkney-light';
+  src: url("../fonts/orkney-light-webfont.woff2") format("woff2"), url("../fonts/orkney-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'orkney-medium';
+  src: url("../fonts/orkney-medium-webfont.woff2") format("woff2"), url("../fonts/orkney-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'orkney-regular';
+  src: url("../fonts/orkney-regular-webfont.woff2") format("woff2"), url("../fonts/orkney-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'orkney-bold';
+  src: url("../fonts/orkney-bold-webfont.woff2") format("woff2"), url("../fonts/orkney-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
-  font-family: sans-serif;
+  font-family: 'orkney-regular', sans-serif;
+  font-weight: 300;
   font-size: 16px;
-  padding: 25px; }
+  background-color: white; }
+
+header {
+  background-color: #3A4388;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 85px;
+  font-weight: 700;
+  font-size: 24px;
+  color: white; }
+  header nav {
+    display: flex;
+    gap: 36px; }
+
+footer {
+  padding: 55px 0;
+  background-color: #3A4388;
+  color: #FEFEFE; }
+  footer .footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px; }
+    footer .footer-wrap article {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; }
+  footer .logo {
+    width: 116px; }
+  footer .footer-title {
+    font-family: 'orkney-bold', sans-serif;
+    font-size: 28px; }
+  footer .footer-content-wrap {
+    display: flex;
+    flex-direction: column; }
+    footer .footer-content-wrap:first-child {
+      gap: 24px; }
+    footer .footer-content-wrap:last-child {
+      gap: 14px; }
+  footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    height: 125px; }
+    footer .footer-links a {
+      font-family: 'orkney-regular', sans-serif;
+      font-size: 22px;
+      line-height: 37.4px; }
+  footer .copyright {
+    display: block;
+    margin-top: 20px;
+    font-size: 22px; }
+
+.btn {
+  font-family: 'orkney-medium', sans-serif;
+  background-color: #33EEAC;
+  color: #3A4388;
+  border-radius: 25px;
+  height: 50px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.sec-hero {
+  background-color: #33EEAC;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center; }
+  .sec-hero .hero-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 1024px;
+    color: white; }
+  .sec-hero .headline {
+    font-family: 'gilroy-extrabold', sans-serif;
+    font-size: 90px;
+    line-height: 90px; }
+  .sec-hero .subhead {
+    font-family: 'gilroy-extrabold', sans-serif;
+    font-size: 50px;
+    margin: 32px 0 58px; }
+  .sec-hero .hero-animate {
+    background-color: #3A4388;
+    color: #33EEAC;
+    padding: 10px 15px;
+    width: 750px;
+    border-radius: 35px;
+    font-size: 40px; }
+
+.sec-business {
+  padding: 200px 0; }
+  .sec-business .sec-title {
+    font-family: 'orkney-bold', sans-serif;
+    font-size: 56px;
+    color: #3A4388;
+    margin-bottom: 80px; }
+  .sec-business .models-wrap {
+    display: flex;
+    gap: 25px; }
+    .sec-business .models-wrap .model-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 214px;
+      height: 214px;
+      border-radius: 6px;
+      border: 1px solid #33EEAC;
+      box-shadow: 0 19px 33px 0 rgba(111, 109, 113, 0.13);
+      font-family: 'orkney-bold', sans-serif;
+      font-size: 26px;
+      text-align: center;
+      color: #3A4388; }
+
+.sec-partners {
+  padding: 48px 0 116px;
+  background-color: #3A4388;
+  text-align: center; }
+  .sec-partners .sec-title {
+    font-family: 'orkney-bold', sans-serif;
+    font-size: 56px;
+    color: #33EEAC;
+    margin-bottom: 80px; }
+  .sec-partners .partners-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    align-items: center;
+    justify-content: center; }
+
+.sec-contact {
+  padding: 200px 0; }
+  .sec-contact .sec-content {
+    font-family: 'orkney-medium', sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+    color: #3A4388;
+    width: 468px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  form label {
+    font-family: 'orkney-medium', sans-serif;
+    color: #3A4388; }
+  form input[type='text'], form input[type='email'], form input[type='tel'], form input[type='submit'] {
+    width: 500px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: none;
+    margin: 0; }
+  form input[type='submit'] {
+    font-family: 'orkney-medium', sans-serif;
+    background-color: #33EEAC;
+    color: white; }
