@@ -204,6 +204,8 @@ form {
       .sec-business .models-wrap .model-item img {
         display: none;
         visibility: hidden; }
+      .sec-business .models-wrap .model-item:hover {
+        cursor: pointer; }
       .sec-business .models-wrap .model-item.active {
         background-color: #3A4388;
         color: #33EEAC;
@@ -216,7 +218,8 @@ form {
   .sec-business .models-cont-wrap .model-cont {
     display: flex;
     flex-direction: column;
-    gap: 86px; }
+    gap: 86px;
+    display: none; }
     .sec-business .models-cont-wrap .model-cont .model-title {
       font-family: 'orkney-bold', sans-serif;
       font-size: 50px;
