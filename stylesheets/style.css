@@ -60,7 +60,8 @@ header {
 footer {
   padding: 55px 0;
   background-color: #3A4388;
-  color: #FEFEFE; }
+  color: #FEFEFE;
+  border-top: 14px solid #33EEAC; }
   footer .footer-wrap {
     display: flex;
     flex-wrap: wrap;
