@@ -93,6 +93,7 @@
 					color: $color-primary
 					list-style: none
 					position: relative
+					max-width: 425px
 					&:before
 						content: ""
 						display: block
@@ -105,8 +106,7 @@
 						left: -60px
 			.problem
 				display: flex
-				flex-wrap: wrap
-				gap: 300px
+				justify-content: space-between
 				.topics-wrap
 					position: relative
 					&:before
@@ -126,7 +126,6 @@
 			.solution
 				.topics-wrap
 					display: flex
-					flex-wrap: wrap
 					gap: 200px
 				.topics li:before
 					background-image: url('../images/icon-check.svg')

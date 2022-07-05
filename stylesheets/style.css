@@ -64,6 +64,8 @@ header {
       transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1); }
       header nav a:hover {
         color: #33EEAC; }
+  header .btn:hover {
+    background-color: white; }
 
 footer {
   padding: 55px 0;
@@ -116,13 +118,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   -webkit-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
   -ms-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1); }
-  .btn:hover {
-    background-color: white; }
 
 form {
   display: flex;
@@ -240,7 +241,8 @@ form {
         font-size: 20px;
         color: #3A4388;
         list-style: none;
-        position: relative; }
+        position: relative;
+        max-width: 425px; }
         .sec-business .models-cont-wrap .model-cont .topics li:before {
           content: "";
           display: block;
@@ -253,8 +255,7 @@ form {
           left: -60px; }
     .sec-business .models-cont-wrap .model-cont .problem {
       display: flex;
-      flex-wrap: wrap;
-      gap: 300px; }
+      justify-content: space-between; }
       .sec-business .models-cont-wrap .model-cont .problem .topics-wrap {
         position: relative; }
         .sec-business .models-cont-wrap .model-cont .problem .topics-wrap:before {
@@ -273,7 +274,6 @@ form {
         background-image: url("../images/icon-x.svg"); }
     .sec-business .models-cont-wrap .model-cont .solution .topics-wrap {
       display: flex;
-      flex-wrap: wrap;
       gap: 200px; }
     .sec-business .models-cont-wrap .model-cont .solution .topics li:before {
       background-image: url("../images/icon-check.svg"); }
