@@ -1,0 +1,116 @@
+// Variables
+$color-primary: #3A4388
+$color-secondary: #33EEAC
+
+// Mixins
+@mixin transition($time)
+  -webkit-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  -moz-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  -ms-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  -o-transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+  transition: all $time cubic-bezier(0.42, 0, 0.58, 1)
+
+// Fonts
+@font-face
+  font-family: 'gilroy-light'
+  src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'), url('../fonts/gilroy-light-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'gilroy-extrabold'
+  src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'), url('../fonts/gilroy-extrabold-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'orkney-light'
+  src: url('../fonts/orkney-light-webfont.woff2') format('woff2'), url('../fonts/orkney-light-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'orkney-medium'
+  src: url('../fonts/orkney-medium-webfont.woff2') format('woff2'), url('../fonts/orkney-medium-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'orkney-regular'
+  src: url('../fonts/orkney-regular-webfont.woff2') format('woff2'), url('../fonts/orkney-regular-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'orkney-bold'
+  src: url('../fonts/orkney-bold-webfont.woff2') format('woff2'), url('../fonts/orkney-bold-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+a, a:active, a:visited
+  color: inherit
+  text-decoration: none
+
+body
+  font-family: 'orkney-regular', sans-serif
+  font-weight: 300
+  font-size: 16px
+  background-color: white
+
+header
+  background-color: $color-primary
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 10px 85px
+  font-weight: 700
+  font-size: 24px
+  color: white
+  nav
+    display: flex
+    gap: 36px
+    a
+      @include transition(500ms)
+      &:hover
+        color: $color-secondary
+
+footer
+  padding: 55px 0
+  background-color: $color-primary
+  color: #FEFEFE
+  border-top: 14px solid $color-secondary
+  .footer-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 200px
+    article
+      display: flex
+      flex-direction: column
+      gap: 40px
+  .logo
+    width: 116px
+  .footer-title
+    font-family: 'orkney-bold', sans-serif
+    font-size: 28px
+  .footer-content-wrap
+    display: flex
+    flex-direction: column
+    &:first-child
+      gap: 24px
+    &:last-child
+      gap: 14px
+  .footer-links
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    gap: 5px
+    height: 125px
+    a
+      font-family: 'orkney-regular', sans-serif
+      font-size: 22px
+      line-height: 37.4px
+  .copyright
+    display: block
+    margin-top: 20px
+    font-size: 22px
