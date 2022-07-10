@@ -37,7 +37,8 @@ $(document).ready(function(){
   		items:1,
   		loop:false,
   		nav:true,
-  		dots:false
+  		dots:false,
+  		margin:30
     });
 
 	})(jQuery);

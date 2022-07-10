@@ -12,6 +12,10 @@
 	.paragraph
 		font-size: 22px
 		color: $color-primary
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
+		.paragraph
+			font-size: 16px
 
 .sec-associates
 	padding: 100px 0 200px
@@ -23,6 +27,7 @@
 	margin: 80px 0
 	figure
 		position: relative
+		margin: 0 auto
 		&:before
 			position: absolute
 			z-index: 0
@@ -52,6 +57,13 @@
 	.associate-desc
 		font-size: 14px
 		color: $color-primary
+	@media only screen and (max-width: 40rem)
+		flex-direction: column
+		figure:before
+			width: 100%
+			height: 100%
+			top: -10px
+			left: -10px
 
 .owl-associates
 	.owl-prev,
