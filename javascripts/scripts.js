@@ -19,7 +19,7 @@ $(document).ready(function(){
 		  		items:1,
 		  		loop:false,
 		  		nav:false,
-		  		dot:false,
+		  		dots:true,
 		  		stagePadding:20,
 		  		margin:20
 		    });
@@ -31,6 +31,14 @@ $(document).ready(function(){
 		});
 
 		owlMobile();
+
+		$('.owl-associates').owlCarousel({
+			center:true,
+  		items:1,
+  		loop:false,
+  		nav:true,
+  		dots:false
+    });
 
 	})(jQuery);
 });

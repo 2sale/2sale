@@ -1,0 +1,76 @@
+// Página Sobre
+.sec-sobre
+	padding: 200px 0 100px
+	.who-we-are
+		max-width: 920px
+		margin: 0 auto
+	.page-title
+		font-family: 'gilroy-extrabold'
+		font-size: 34px
+		color: $color-primary
+		margin-bottom: 12px
+	.paragraph
+		font-size: 22px
+		color: $color-primary
+
+.sec-associates
+	padding: 100px 0 200px
+
+.associates-wrap
+	display: flex
+	gap: 80px
+	justify-content: center
+	margin: 80px 0
+	figure
+		position: relative
+		&:before
+			position: absolute
+			z-index: 0
+			content: ""
+			display: block
+			width: 368px
+			height: 650px
+			background-color: $color-secondary
+			border-radius: 12px
+			top: -70px
+			left: -160px
+		img
+			position: relative
+			z-index: 1
+			max-width: 368px
+	.associate-content
+		display: flex
+		flex-direction: column
+		max-width: 388px
+		gap: 10px
+	.associates-title
+		font-size: 24px
+		color: $color-primary
+	.associate-name
+		font-family: 'gilroy-extrabold'
+		font-size: 48px
+	.associate-desc
+		font-size: 14px
+		color: $color-primary
+
+.owl-associates
+	.owl-prev,
+	.owl-next
+		position: relative
+		&:hover
+			background-color: transparent !important
+		&:before
+			content: ""
+			background-image: url('../images/arrow-right.svg')
+			background-repeat: no-repeat
+			background-size: contain
+			display: block
+			width: 36px
+			height: 16px
+		&.disabled:before
+			opacity: 0.5
+		span
+			display: none
+
+	.owl-prev:before
+		transform: rotate(180deg)
