@@ -26,6 +26,7 @@
 		@include transition(500ms)
 		.accordion-title
 			display: flex
+			gap: 26px
 			align-items: center
 			font-family: 'orkney-bold'
 			font-size: 18px
@@ -46,6 +47,10 @@
 			border: 1px solid $color-secondary
 			.accordion-title::before
 				color: $color-secondary
+	@media only screen and (max-width: 40rem)
+		gap: 20px
+		.accordion-item
+			width: 100%
 
 .owl-clients .owl-stage,
 .owl-clients .owl-item

@@ -511,6 +511,7 @@ form {
     transition: all 500ms cubic-bezier(0.42, 0, 0.58, 1); }
     .accordion .accordion-item .accordion-title {
       display: flex;
+      gap: 26px;
       align-items: center;
       font-family: 'orkney-bold';
       font-size: 18px;
@@ -531,6 +532,11 @@ form {
       border: 1px solid #33EEAC; }
       .accordion .accordion-item.is-active .accordion-title::before {
         color: #33EEAC; }
+  @media only screen and (max-width: 40rem) {
+    .accordion {
+      gap: 20px; }
+      .accordion .accordion-item {
+        width: 100%; } }
 
 .owl-clients .owl-stage,
 .owl-clients .owl-item {
