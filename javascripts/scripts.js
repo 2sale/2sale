@@ -41,5 +41,21 @@ $(document).ready(function(){
   		margin:30
     });
 
+    $('.owl-clients').owlCarousel({
+			center:true,
+			autoplay:true,
+			items:7,
+  		loop:true,
+  		nav:false,
+  		dots:true,
+  		margin:40,
+	    0 : {
+        items:1
+	    },
+	    640 : {
+        items:7
+	    }
+    });
+
 	})(jQuery);
 });

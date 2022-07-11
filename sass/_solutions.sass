@@ -1,0 +1,60 @@
+// Página Soluções
+.sec-solutions
+	padding: 200px 0 100px
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
+
+.sec-clients
+	padding: 100px 0 200px
+	text-align: center
+	.sec-title
+		font-family: 'orkney-medium'
+		font-size: 30px
+	@media only screen and (max-width: 40rem)
+		padding: 100px 0
+
+.accordion
+	display: flex
+	flex-wrap: wrap
+	gap: 40px 50px
+	.accordion-item
+		width: 356px
+		height: 94px
+		border-radius: 12px
+		border: 1px solid $color-primary
+		overflow: hidden
+		@include transition(500ms)
+		.accordion-title
+			display: flex
+			align-items: center
+			font-family: 'orkney-bold'
+			font-size: 18px
+			height: 94px
+			color: $color-primary
+			border: none
+			padding: 24px 26px
+			&::before
+				color: $color-primary
+			&:hover
+				background-color: transparent
+		.accordion-content
+			border: none
+			font-size: 13px
+			color: $color-primary
+		&.is-active
+			height: initial
+			border: 1px solid $color-secondary
+			.accordion-title::before
+				color: $color-secondary
+
+.owl-clients .owl-stage,
+.owl-clients .owl-item
+	display: flex
+	align-items: center
+	justify-content: center
+
+.owl-carousel .owl-item img
+	max-width: fit-content
+
+.owl-clients.owl-theme .owl-nav.disabled+.owl-dots
+	margin-top: 50px
