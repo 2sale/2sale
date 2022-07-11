@@ -65,15 +65,18 @@ header {
       header nav a.active, header nav a:hover {
         color: #33EEAC; }
   header .btn {
-    color: #3A4388; }
+    color: #3A4388;
+    padding: 16px 36px; }
     header .btn:hover {
       background-color: white; }
+  header .logo {
+    display: contents; }
   @media only screen and (max-width: 40rem) {
     header {
-      padding: 10px; }
-      header nav {
-        display: none;
-        gap: 10px; } }
+      width: 100%;
+      gap: 40px;
+      padding: 10px;
+      overflow-x: scroll; } }
 
 footer {
   padding: 55px 0;
