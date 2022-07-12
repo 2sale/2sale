@@ -376,8 +376,10 @@ form {
   @media only screen and (max-width: 40rem) {
     .sec-partners .partners-wrap {
       gap: 40px; }
+      .sec-partners .partners-wrap a {
+        width: 100%; }
       .sec-partners .partners-wrap img {
-        width: 30%; } }
+        width: 40%; } }
 
 .sec-contact {
   padding: 200px 0; }
